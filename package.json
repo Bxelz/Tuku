@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "debug": "node --inspect index.js"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.14.8",
+    "@discordjs/voice": "^0.18.0",
+    "@distube/spotify": "^2.0.2",
+    "@google-cloud/text-to-speech": "^5.8.0",
+    "@napi-rs/canvas": "^0.1.67",
+    "@top-gg/sdk": "^3.1.6",
+    "axios": "^1.7.9",
+    "canvacord": "^6.0.2",
+    "canvas": "^3.1.0",
+    "colorthief": "^2.6.0",
+    "cron": "^4.1.0",
+    "discord-arts": "^0.7.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ffmpeg": "^0.0.4",
+    "fs": "^0.0.1-security",
+    "google-tts-api": "^2.0.2",
+    "install": "^0.13.0",
+    "mongodb": "^6.13.0",
+    "nekos-best.js": "^6.3.1",
+    "nekosapi": "^0.6.4",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "node-vibrant": "^4.0.3",
+    "npm": "^11.1.0",
+    "sharp": "^0.33.5",
+    "spotify-web-api-node": "^5.0.2",
+    "ssh2": "^1.16.0",
+    "topgg-autoposter": "^2.0.2",
+    "unzipper": "^0.12.3",
+    "vellune-canvas": "file:./vellune-canvas/"
+  }
+}

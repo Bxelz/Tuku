@@ -1,0 +1,5 @@
+.vscode/
+DB/
+errors.txt
+node_modules
+config.json
