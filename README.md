@@ -1,38 +1,31 @@
-# Wamoone | Closed Source
+```markdown
+# Tuku | Open Source
 
 ---
 
-### Wammone is currently being shaped into something great, or better known as development!
+### About The Bot
 
-## Features
-- **None Yet**
+Tuku powers various features in the [Starlit Stargazers](https://discord.gg/RkuUmbByR9) server, and this repository contains its source code.
 
 ---
+
+### Nekos.Best
+
+The API that powers the anime for this bot is sourced from [Nekos Best](https://nekos.best), please consider the authors when using their service.
 
 ## Installation Instructions
 
-Follow these steps to set up and run Lunr on your own machine:
+Follow these steps to set up and run Tuku on your own machine:
 
 ### 1. **Clone the Repository**
 
-First, clone the Lunr repository to your local machine using Git:
+First, clone the Tuku repositor using Git:
 
 ```bash
-git clone https://github.com/Bxelz/Wamoone.git
-cd Lunr
+git clone https://github.com/Bxelz/Tuku
 ```
 
-### 2. **Create a MongoDB Database**
-
-Lunr uses MongoDB to manage user data. To set it up, follow these steps:
-
-- Go to [MongoDB's website](https://www.mongodb.com) and sign up for an account.
-- Create a new database in MongoDB's dashboard.
-- Obtain the connection URI for your MongoDB instance.
-
-Once you have the MongoDB URI, you will need to configure it in your `config.json` file.
-
-### 3. **Install Dependencies**
+### 2. **Install Dependencies**
 
 Install the necessary dependencies using `npm`:
 
@@ -40,55 +33,54 @@ Install the necessary dependencies using `npm`:
 npm install
 ```
 
-### 4. **Obtain API Tokens**
+### 3. **Obtain a Discord Bot Token**
 
-You'll need both a Groq token (for AI model integration) and a Discord bot token.
+You'll need a Discord bot token to run Tuku.
 
-#### Get API Token from Groq:
-- Sign up at [Groq's website](https://groq.com) and generate a new token.
-- Save your Groq token for the next step.
-
-#### Obtain a Discord Bot Token:
 - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 - Create a new application, then navigate to the "Bot" tab to generate your bot token.
 - Save your Discord bot token for the next step.
 
-### 5. **Configure the Bot**
+### 4. **Configure the Bot**
 
-Once you have your tokens and MongoDB URI, you need to configure them in the `config.json` file.
-
-- Open the `config.json` file in your project directory.
-- Add your Groq token, Discord bot token, and MongoDB URI like this:
+Create a `config.json` file in the project directory and add your bot token along with other configuration settings. Use the following structure:
 
 ```json
 {
-  "groq": "your_groq_token_here",
-  "token": "your_discord_bot_token_here",
-  "mongoURI": "your_mongodb_connection_uri_here"
+    "name": "BOT_NAME",
+    "token": "BOT_TOKEN",
+    "devtoken": "DEV_BOT_TOKEN",
+    "dev": "TRUE_OR_FALSE",
+    "prefix": "COMMAND_PREFIX",
+    "color": "EMBED_COLOR",
+    "client_id": "BOT_ID",
+    "status": "STATUS_LIKE_HELLO",
+    "trusted_users": "OWNER_ID_TRUSTED",
+    "server": "GUILD_ID",
+    "animeChannel": "CHANNEL_ID"
 }
 ```
 
-### 6. **Start the Bot**
+- Replace `"token"` and `"devtoken"` with your actual Discord bot token(s).
+- Adjust other fields as needed (e.g., `name`, `prefix`, `color`, etc.).
 
-After configuring the tokens and database, move the `src` folder files into your main project folder and start the bot:
+### 5. **Start the Bot**
+
+After configuring `config.json`, move the `src` folder files into your main project folder and start the bot:
 
 ```bash
 npm start index.js
 ```
 
-Now your AI-powered Discord chatbot is ready to go!
+Now Tuku should be running and ready to join your server!
 
 ---
 
 ## Contributing
 
-We welcome contributions to Lunr! If you'd like to contribute, please follow these steps:
+We welcome contributions to Tuku! If you'd like to contribute, please follow these steps:
 
 1. **Submit a pull request** to the main repository, explaining your changes.
-2. **Join The Discord** with the included discord link at the top of this page.
+2. **Join the Starlit Stargazers Discord** at [https://discord.gg/RkuUmbByR9](https://discord.gg/RkuUmbByR9).
 
 We’ll review your contribution and merge it if it aligns with the project’s goals.
-
----
-
-Thank you for being part of the Lunr project! If you have any questions or suggestions, feel free to open an issue.
